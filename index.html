@@ -31,7 +31,7 @@
             <a class="navbar-brand" href="#">
                 <img src="media/logo_new.png" alt="" srcset="" class="resp-logo pl=3">
             </a>
-            <button class="navbar-toggler second-button" type="button" data-toggle="collapse"
+            <button onclick="toggleNav()" class="navbar-toggler second-button" type="button" data-toggle="collapse"
                           data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
                           aria-expanded="false" aria-label="Toggle navigation">
                 <!-- <span class="navbar-toggler-icon"></span> -->
@@ -177,7 +177,9 @@
                     </div>
                 </div>
             </div>
-            <img src="media/benefits.png" id="myimg" alt="" >
+            <div style="overflow: scroll;">
+                <img src="media/benefits.png" id="myimg" alt="" >
+            </div>
         </div>
 
         <!-- CONNECTS ENDS  -->
@@ -318,5 +320,13 @@
 <script type="text/javascript">
 	function mail(){
 		window.open('mailto:goel97ketan@gmail.com?subject="Fasthire referrals"&body=body');
-	}
+    }
+    function toggleNav(){
+        const nav = document.getElementById('navbarSupportedContent');
+        if(nav.classList.contains('collapse')){
+            nav.classList.remove('collapse');
+        } else{
+            nav.classList.add('collapse');
+        }
+    }
 </script>
