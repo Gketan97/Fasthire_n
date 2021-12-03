@@ -31,7 +31,7 @@
             <a class="navbar-brand" href="#">
                 <img src="media/logo_new.png" alt="" srcset="" class="resp-logo pl=3">
             </a>
-            <button class="navbar-toggler second-button" type="button" data-toggle="collapse"
+            <button onclick="toggleNav()" class="navbar-toggler second-button" type="button" data-toggle="collapse"
                           data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
                           aria-expanded="false" aria-label="Toggle navigation">
                 <!-- <span class="navbar-toggler-icon"></span> -->
@@ -55,10 +55,10 @@
                     <li class="nav-item" style="background-color: #f2ffe6">
                         <a class="nav-link " href="#faq"><strong>FAQ's</strong></a>
                     </li>
-
-
+                    <li class="nav-item" style="background-color: #f2ffe6">
+                        <a class="nav-link " href="#contact"><strong>Contact Us</strong></a>
+                    </li>
                 </ul>
-
             </div>
 
         </div>
@@ -82,7 +82,6 @@
                                     </h2>
                                     <p>To Help You Break Into Tech</p>
                                 </div>
-                                <div ><button class="button button3" onclick="mail()" style="background-color: #66cc00; margin-right: 80px;"><strong>Get in Touch with us 📧 </strong></a></button> </div>
                             </div>
                         </div>
                     </div>
@@ -177,7 +176,9 @@
                     </div>
                 </div>
             </div>
-            <img src="media/benefits.png" id="myimg" alt="" >
+            <div class='myimgContainer' style="overflow: scroll;">
+                <img src="media/benefits.png" id="myimg" alt="" >
+            </div>
         </div>
 
         <!-- CONNECTS ENDS  -->
@@ -218,13 +219,15 @@
                 <h3><strong>How It Works</strong></h3>
                 <p>Fast Hire follows these steps for their referral program</p>
             </div>
-            <div>
-            	<img src="media/referral_profs.PNG" id="myimage" alt="" style=" width:1000px">
+            <div style="text-align: center;">
+                <img id="proSteps" alt="" style="width:1000px"/>
+                <a href="https://docs.google.com/forms/d/e/1FAIpQLSfJe0ttksUGNng9lyCv17FE7K6hNvQUE8wRfHJjY0wE7xuhSA/viewform" class="btn btn-primary" style="background-color:#1a6600; color:white;margin: 40px auto;display: block; width: 180px; padding: 17px;" target="_blank">Apply Now</a>
             </div>
             <br>
             <hr>
-                <div>
-                	<img src="media/referral_candidate.PNG" id="myimage" alt="" style=" width:1000px">
+                <div style="text-align: center;">
+                    <img id="refreeSteps" alt="" style="width:1000px">
+                    <a href="https://forms.gle/iYyczSj1cXPubqeU9" style="background-color:#1a6600; color:white;margin: 40px auto;display: block; width: 180px; padding: 17px;" class="btn btn-primary" target="_blank">Apply Now</a>
                 </div>
 
             </div>
@@ -240,41 +243,6 @@
                 <h3><strong>Get Started with Us </strong></h3>
                 <p>To Find Referrals From Professionals Working At Some Of The Best Companies In The World</p>
             </div>
-            <div class="bussiness container ">
-                <div class="row mb-5 mx-auto bsn-row">
-                    <div class="col-12 col-md-6 p-2 ">
-                        <div class="card text-center">
-                            <div class="card-header" style="background-color: #00b300;">
-                              <br>
-                            </div>
-                            <div class="card-body" style="background-color: #ecffe6;">
-                              <h5 class="card-title">For professionals looking <br> for referrals</h5>
-                              <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-                              <a href="https://docs.google.com/forms/d/e/1FAIpQLSfJe0ttksUGNng9lyCv17FE7K6hNvQUE8wRfHJjY0wE7xuhSA/viewform" class="btn btn-primary" style="background-color:#1a6600; color:white;" target="_blank">Apply Now</a>
-                            </div>
-                            <div class="card-footer" style="background-color: #00b300;">
-                              <br>
-                            </div>
-                          </div>
-                    </div>
-                    <div class="col-12 col-md-6 p-2">
-                        <div class="card text-center">
-                            <div class="card-header" style="background-color: #00b300">
-                              <br>
-                            </div>
-                            <div class="card-body" style="background-color: #eeffe6;">
-                              <h5 class="card-title">For professionals looking to <br> refer other professionals</h5>
-                              <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-                              <a href="https://forms.gle/iYyczSj1cXPubqeU9" style="background-color:#1a6600; color:white;" class="btn btn-primary" target="_blank">Apply Now</a>
-                            </div>
-                            <div class="card-footer" style="background-color: #00b300;">
-                              <br>
-                            </div>
-                          </div>
-                    </div>
-                    
-                </div>
-            </div>
         </div>
 
         <!-- REFERRALS ENDS  -->
@@ -283,7 +251,6 @@
 
 
        <!-- FAQ  -->
-
        <div class="container my-5 working-container" id="faq">
         <div class="container-fluid feature-main-heading py-3 my-3">
             <h3><strong>FAQ's</strong></h3>
@@ -296,27 +263,31 @@
         		<li> write ques </li>
         	</ul>
         </div>
-        
-
-
     <!-- FAQ ENDS  -->
 
-
-
-
-
+    <!---Contact Us-->
+    <div class="container my-5 working-container" id="contact">
+    <div class="container-fluid feature-main-heading py-3 my-3">
+        <h3><strong>Contact Us</strong></h3>        
+    </div>
+    <div class='contactUsText'>
+        For any queries feel free to drop us a note at   <span class="emailId">fastreferral@gmail.com</span>
+    </div>
 
     </div>
 
     <footer style="height: 50px;">
       <p style="padding-top:10px; text-align:center;"> © 2021 Copyright : FastHire  </p>
-
-
     </footer>
 </body>
 </html>
 <script type="text/javascript">
-	function mail(){
-		window.open('mailto:goel97ketan@gmail.com?subject="Fasthire referrals"&body=body');
-	}
+    function toggleNav(){
+        const nav = document.getElementById('navbarSupportedContent');
+        if(nav.classList.contains('collapse')){
+            nav.classList.remove('collapse');
+        } else{
+            nav.classList.add('collapse');
+        }
+    }
 </script>

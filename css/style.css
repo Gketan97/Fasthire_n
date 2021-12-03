@@ -641,16 +641,14 @@ footer {
     /* color: rgb(11, 47, 53) !important; */
     color: #32b8209f !important;
 }
+.myimgContainer{
+    text-align: center;
+}
 
 #myimg{
     width: 1200px;
-    margin-left: 46px;
 }
 
-#myimage{
-    width:1000px;
-    margin-left:35px;
-}
 
 .integrate-tools {
     background-color: #f2ffe6;
@@ -677,3 +675,35 @@ footer {
   margin: 4px 2px;
 }
 .button3 {border-radius: 8px;}
+
+.emailId {
+    color: #2CA01C;
+    font-weight: 700;
+}
+
+.contactUsText{
+    font-size: 20px;
+}
+#proSteps{
+    content: url('../media/referral_profs.PNG');
+}
+
+#refreeSteps{
+    content: url('../media/referral_candidate.PNG');
+}
+
+@media screen and (max-width: 768px) {
+    .myimgContainer{
+        text-align: left;
+    }
+    #proSteps{
+        width: 100% !important;
+        content: url('../media/referral_profs_mobile.PNG');
+    }
+    
+    #refreeSteps{
+        width: 100%!important;
+        content: url('../media/referal_candidate_mobile.png');
+    }
+
+}
