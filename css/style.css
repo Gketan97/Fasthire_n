@@ -684,11 +684,11 @@ footer {
 .contactUsText{
     font-size: 20px;
 }
-#proSteps{
-    content: url('../media/referral_profs.PNG');
+#referrerSteps{
+    content: url('../media/referral_referrer.png');
 }
 
-#refreeSteps{
+#candidateSteps{
     content: url('../media/referral_candidate.PNG');
 }
 
@@ -696,14 +696,23 @@ footer {
     .myimgContainer{
         text-align: left;
     }
-    #proSteps{
+    #referrerSteps{
         width: 100% !important;
-        content: url('../media/referral_profs_mobile.PNG');
+        content: url('../media/referral_referrer_mobile.PNG');
     }
     
-    #refreeSteps{
+    #candidateSteps{
         width: 100%!important;
         content: url('../media/referal_candidate_mobile.png');
     }
 
+}
+
+details{
+    margin: 10px 0;
+}
+
+details > p {
+    margin-top: 10px;
+    color: #A9A9A9;
 }
