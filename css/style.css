@@ -689,7 +689,7 @@ footer {
 }
 
 #candidateSteps{
-    content: url('../media/referral_candidate.PNG');
+    content: url('../media/referral_candidate.png');
 }
 
 @media screen and (max-width: 768px) {
@@ -698,12 +698,12 @@ footer {
     }
     #referrerSteps{
         width: 100% !important;
-        content: url('../media/referral_referrer_mobile.PNG');
+        content: url('../media/referral_referrer_mobile.png');
     }
     
     #candidateSteps{
-        width: 100%!important;
-        content: url('../media/referal_candidate_mobile.png');
+        width: 100% !important;
+        content: url('../media/referral_candidate_mobile.png');
     }
 
 }
