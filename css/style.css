@@ -689,7 +689,7 @@ footer {
 }
 
 #candidateSteps{
-    content: url('../media/referral_candidate.png');
+    content: url('../media/referralCandidate.png');
 }
 
 @media screen and (max-width: 768px) {
