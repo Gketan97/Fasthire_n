@@ -51,6 +51,18 @@ body {
     width: 140px;
 }
 
+.topCTAWrapper{
+    display: flex;
+}
+.ctas {
+    background-color:#1a6600; 
+    color:white;
+    margin: 40px auto;
+    display: block; 
+    width: 180px; 
+    padding: 17px;
+}
+
 nav.navbar.navbar-expand-lg {
     position: absolute;
     z-index: 1;
@@ -265,7 +277,6 @@ button.navbar-toggler:focus {
     box-sizing: border-box;
     display: flex;
     justify-content: center;
-    /* align-items: flex-end; */
     flex-direction: column;
     text-align: center;
     padding: 0 40px 40px 40px;
@@ -343,9 +354,6 @@ button.navbar-toggler:focus {
         max-width: 100%;
         max-width: 560px;
         height: auto;
-    }
-    .sec1-content {
-        align-items: flex-end;
     }
     .banner-heading {
         font-size: 1.5em;
