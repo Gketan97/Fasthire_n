@@ -58,6 +58,9 @@ body {
     .topCTAWrapper{
         display: block;
     }
+    .ctas {
+        margin: 20px auto;
+    }
 }
 .ctas {
     background-color:#1a6600; 
