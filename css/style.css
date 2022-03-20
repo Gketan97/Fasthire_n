@@ -54,6 +54,11 @@ body {
 .topCTAWrapper{
     display: flex;
 }
+@media screen and (max-width: 810px) {
+    .topCTAWrapper{
+        display: block;
+    }
+}
 .ctas {
     background-color:#1a6600; 
     color:white;
